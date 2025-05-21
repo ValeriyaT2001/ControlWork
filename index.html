@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Контрольная работа</title>
+  <link rel="stylesheet" href="index.css">
+  <script defer src="//unpkg.com/mathlive"></script>
+
+</head>
+
+<body>
+  <div class="jaba">
+    <div class="container">
+      <div class="exercise">Приведите общее уравнение прямой к уравнению «в отрезках»</div>
+      <div id="exampleBlock1"></div>
+      <button id="action">Добавить строчку</button>
+      <button id="actionDelet">Удалить строчку</button>
+      <div id="Blocks"></div>
+      <button id="send">Отправить</button>
+    </div>
+
+    <div class="container">
+      <div class="exercise">Приведите общее уравнение плоскости к уравнению «в отрезках»</div>
+      <div id="exampleBlock2"></div>
+      <button id="action2">Добавить строчку</button>
+      <button id="actionDelet2">Удалить строчку</button>
+      <div id="Blocks2"></div>
+      <button id="send2">Отправить</button>
+    </div>
+  </div>
+
+  <div class="jaba">
+    <div class="container">
+      <div class="exercise">Приведите общее уравнение прямой к нормированному виду</div>
+      <div id="exampleBlock3"></div>
+      <button id="action3">Добавить строчку</button>
+      <button id="actionDelet3">Удалить строчку</button>
+      <div id="Blocks3"></div>
+      <button id="send3">Отправить</button>
+    </div>
+
+    <div class="container">
+      <div class="exercise">Приведите общее уравнение плоскости к нормированному виду</div>
+      <div id="exampleBlock4"></div>
+      <button id="action4">Добавить строчку</button>
+      <button id="actionDelet4">Удалить строчку</button>
+      <div id="Blocks4"></div>
+      <button id="send4">Отправить</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script type="module">
+    import { ComputeEngine } from
+      'https://unpkg.com/@cortex-js/compute-engine?module';
+
+    const ce = new ComputeEngine();
+  </script>
+  <script type="module" src="/index.js"></script>
+
+</body>
+
+</html>
