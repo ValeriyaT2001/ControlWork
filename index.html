@@ -1,68 +1,84 @@
+<!-- index.html (исправленный) -->
 <!doctype html>
 <html lang="ru">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Контрольная работа</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
   <script defer src="//unpkg.com/mathlive"></script>
-
 </head>
 
 <body>
-  <div class="jaba">
-    <div class="container">
-      <div class="exercise">Приведите общее уравнение прямой к уравнению «в отрезках»</div>
-      <div id="exampleBlock1"></div>
-      <button id="action">Добавить строчку</button>
-      <button id="actionDelet">Удалить строчку</button>
-      <div id="Blocks"></div>
-      <button id="send">Отправить</button>
+  <div class="container">
+    <div class="exercise">
+      Задано общее уравнение прямой <div id="exampleBlock1" class="math-example"></div>. Привести его к уравнению "в отрезках".</div>
+    <div>
+      <p>Решение:</p>
+      <button id="action1">Добавить строчку</button>
+      <button id="actionDelet1">Удалить строчку</button>
+      <div id="Blocks1" class="solution-steps"></div>
     </div>
+    <div>
+      <p>Ответ:</p>
+      <math-field id="answerBlock1" class="answer-field"></math-field>
+    </div>
+    <div id="feedback1" class="feedback-container"></div>
+  </div>
 
-    <div class="container">
-      <div class="exercise">Приведите общее уравнение плоскости к уравнению «в отрезках»</div>
-      <div id="exampleBlock2"></div>
+  <div class="container">
+    <div class="exercise"> Задано общее уравнение плоскости <div id="exampleBlock2" class="math-example"></div>. Привести его к уравнению "в
+      отрезках".</div>
+    <div>
+      <p>Решение:</p>
       <button id="action2">Добавить строчку</button>
       <button id="actionDelet2">Удалить строчку</button>
-      <div id="Blocks2"></div>
-      <button id="send2">Отправить</button>
+      <div id="Blocks2" class="solution-steps"></div>
     </div>
+    <div>
+      <p>Ответ:</p>
+      <math-field id="answerBlock2" class="answer-field"></math-field>
+    </div>
+    <div id="feedback2" class="feedback-container"></div>
   </div>
 
-  <div class="jaba">
-    <div class="container">
-      <div class="exercise">Приведите общее уравнение прямой к нормированному виду</div>
-      <div id="exampleBlock3"></div>
+  <div class="container">
+    <div class="exercise">Привести общее уравнение прямой <div id="exampleBlock3" class="math-example"></div> к нормальному виду</div>
+    <div>
+      <p>Решение:</p>
       <button id="action3">Добавить строчку</button>
       <button id="actionDelet3">Удалить строчку</button>
-      <div id="Blocks3"></div>
-      <button id="send3">Отправить</button>
+      <div id="Blocks3" class="solution-steps"></div>
     </div>
-
-    <div class="container">
-      <div class="exercise">Приведите общее уравнение плоскости к нормированному виду</div>
-      <div id="exampleBlock4"></div>
-      <button id="action4">Добавить строчку</button>
-      <button id="actionDelet4">Удалить строчку</button>
-      <div id="Blocks4"></div>
-      <button id="send4">Отправить</button>
+    <div>
+      <p>Ответ:</p>
+      <math-field id="answerBlock3" class="answer-field"></math-field>
     </div>
+    <div id="feedback3" class="feedback-container"></div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-    </script>
-  <script type="module">
-    import { ComputeEngine } from
-      'https://unpkg.com/@cortex-js/compute-engine?module';
+  <div class="container">
+    <div class="exercise">Привести общее уравнение плоскости <div id="exampleBlock4" class="math-example"></div> к нормальному виду</div>
+    <div>
+      <p>Решение:</p>
+      <button id="action4">Добавить строчку</button>
+      <button id="actionDelet4">Удалить строчку</button>
+      <div id="Blocks4" class="solution-steps"></div>
+    </div>
+    <div>
+      <p>Ответ:</p>
+      <math-field id="answerBlock4" class="answer-field"></math-field>
+    </div>
+    <div id="feedback4" class="feedback-container"></div>
+  </div>
+  <div id="finalResultsContainer" class="final-results">
+    <h3>Итоговые результаты</h3>
+    <div id="finalScoreDisplay"></div>
+  </div>
+  <button id="end" class="end-button">Закончить контрольную работу</button>
 
-    const ce = new ComputeEngine();
-  </script>
-  <script type="module" src="/index.js"></script>
-
+  <script type="module" src="index.js"></script>
 </body>
 
 </html>
